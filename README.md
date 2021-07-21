@@ -1,6 +1,6 @@
 Sample personal website for photographer.
 
-Made with gatsby.js
+Made with Gatsby.js
 
 https://john-kowalsky-photo.netlify.app
 

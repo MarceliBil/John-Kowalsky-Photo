@@ -1,16 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
+
+
+
   const [hide, setHide] = useState(false);
   const [on, setOn] = useState(false);
 
   let website_width;
-  window.addEventListener("resize", () => {
-    website_width = document.body.clientWidth;
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      website_width = document.body.clientWidth;
+    });
+
+    window.addEventListener("scroll", () => {
+      setOn(false);
+    });
+
+    let prevScrollpos = window.pageYOffset;
+    window.addEventListener("scroll", () => {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setHide(false);
+      } else {
+        setHide(true);
+      }
+      prevScrollpos = currentScrollPos;
+    });
   });
+
+
 
   const toggle = () => {
     if (website_width <= 1000) {
@@ -22,20 +45,7 @@ const Header = () => {
     }
   };
 
-  window.addEventListener("scroll", () => {
-    setOn(false);
-  });
 
-  let prevScrollpos = window.pageYOffset;
-  window.addEventListener("scroll", () => {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      setHide(false);
-    } else {
-      setHide(true);
-    }
-    prevScrollpos = currentScrollPos;
-  });
 
   return (
     <header className={`header ${hide && "hide_header"}`}>

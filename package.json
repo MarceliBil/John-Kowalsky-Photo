@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.0",
     "gatsby": "^3.8.1",
     "gatsby-plugin-gatsby-cloud": "^2.9.0",
     "gatsby-plugin-image": "^1.9.0",

@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./MyGallery.scss";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 
 const MyGallery = () => {
-  let photos = document.querySelectorAll(".photo")
-  console.log(photos)
-
 
   return (
     <section className="section my_gallery flex_center" id="my_gallery">

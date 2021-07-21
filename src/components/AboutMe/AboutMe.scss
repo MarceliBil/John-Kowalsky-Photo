@@ -1,0 +1,62 @@
+@import "../../styles/global.scss";
+
+.about_me {
+  height: fit-content;
+  margin-top: -100px;
+  .section_content {
+    background-color: $superlight;
+    width: fit-content !important;
+    z-index: 1;
+    padding-top: 150px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+      "photo h2 h2"
+      "photo description description"
+      ". . .";
+
+    h2 {
+      margin-bottom: 30px;
+      grid-area: h2;
+      align-self: end;
+    }
+
+    .about_me_image {
+      max-width: 330px;
+      max-height: 540px;
+      margin-right: 30px;
+      grid-area: photo;
+    }
+    .description {
+      grid-area: description;
+      max-width: 670px;
+      font-size: $small;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about_me {
+    .section_content {
+      justify-items: center;
+      grid-template-areas:
+        "h2 . ."
+        "photo . ."
+        "description . .";
+
+      h2 {
+        grid-area: h2;
+      }
+      .about_me_image {
+        grid-area: photo;
+        margin: 0 0 30px 0;
+      }
+      .description {
+        grid-area: description;
+      }
+    }
+  }
+}

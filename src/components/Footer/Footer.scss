@@ -1,0 +1,139 @@
+@import "../../../src/styles/global.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: auto;
+
+  .footer_top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .left {
+      width: 100%;
+      max-width: 500px;
+
+      h3 {
+        text-align: left;
+        margin: 0;
+      }
+      .contact_data {
+        font-size: $medium;
+        margin-top: 30px;
+      }
+    }
+
+    .contact_form {
+      flex-direction: column;
+      width: fit-content;
+      width: 100%;
+      max-width: 300px;
+
+      input,
+      textarea,
+      .btn {
+        width: 100%;
+        max-width: 300px !important;
+        resize: none;
+        font-size: $small;
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        margin-top: 5px;
+        width: calc(100% - 5px);
+        padding: 0;
+        button {
+          width: 100%;
+          font-size: $small;
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    margin: 25px 0 0 0;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    border-top: 2px solid $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .left {
+      width: fit-content;
+      .social_links {
+        margin-bottom: 15px;
+        width: fit-content;
+        align-items: flex-end;
+
+        a {
+          margin-right: 14px;
+        }
+      }
+
+      .copyright {
+        width: fit-content;
+      }
+    }
+
+    .navigation {
+      ul {
+        display: flex;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .footer {
+    .footer_top {
+      justify-content: center;
+
+      .left {
+        margin: 30px 0;
+        .contact_data {
+          text-align: center;
+        }
+      }
+    }
+
+    .footer_bottom {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 30px 5px 0 5px;
+      padding: 30px 0 30px 0;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .social_links {
+          margin: 40px 0 15px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .navigation {
+    ul {
+      li {
+        margin: 0 3px;
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

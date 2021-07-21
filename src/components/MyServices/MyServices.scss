@@ -1,0 +1,74 @@
+@import "../../styles/global.scss";
+
+.my_services {
+  .section_content {
+    flex-direction: column;
+    .services_grid {
+      max-width: 1140px;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 20px;
+
+      .service {
+        position: relative;
+        max-width: 400px;
+        overflow: hidden;
+
+        .service_title {
+          z-index: 1;
+          background-color: rgba($color: $black, $alpha: 0.8);
+          color: $superlight;
+          font-size: $small;
+          padding: 10px;
+          position: absolute;
+          min-width: fit-content;
+          width: 60%;
+          text-align: center;
+        }
+
+        .service_img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          filter: saturate(0);
+          transition: 0.2s;
+        }
+      }
+
+      .service:hover {
+        cursor: pointer;
+        .service_img {
+          transform: scale(1.1);
+          filter: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .my_services {
+    .section_content {
+      .services_grid {
+        .service {
+          .service_title {
+            width: 100%;
+            font-size: 0.9rem;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .my_services {
+    .section_content {
+      .services_grid {
+        grid-template-columns: repeat(2, auto);
+      }
+    }
+  }
+}

@@ -10,6 +10,15 @@
       grid-template-rows: repeat(4, auto);
       gap: 20px;
 
+      div {
+        overflow: hidden;
+        max-height: 370px;
+
+        img {
+          width: 100% !important;
+        }
+      }
+
       .one {
         grid-column: 1/3;
       }

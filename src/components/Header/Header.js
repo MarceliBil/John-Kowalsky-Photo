@@ -10,11 +10,6 @@ const Header = () => {
   const ref = useRef(null);
 
   useEffect(() => {
-    let website_width;
-    window.addEventListener("resize", () => {
-      website_width = document.body.clientWidth;
-    });
-
     window.addEventListener("scroll", () => {
       setOn(false);
     });
@@ -33,7 +28,7 @@ const Header = () => {
 
   const toggle = () => {
     if (ref.current.offsetWidth <= 1000) {
-      if (on == false) {
+      if (on === false) {
         setOn(true);
       } else {
         setOn(false);

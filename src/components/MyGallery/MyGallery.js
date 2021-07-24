@@ -14,7 +14,7 @@ const MyGallery = () => {
           <div className="one flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/1.png"
+                src="../../images/one.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -23,7 +23,7 @@ const MyGallery = () => {
           <div className="two flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/2.png"
+                src="../../images/two.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -32,7 +32,7 @@ const MyGallery = () => {
           <div className="three flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/3.png"
+                src="../../images/three.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -41,7 +41,7 @@ const MyGallery = () => {
           <div className="four flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/4.png"
+                src="../../images/four.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -50,7 +50,7 @@ const MyGallery = () => {
           <div className="five flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/5.png"
+                src="../../images/five.png"
                 className=" photo"
               ></StaticImage>
             </Zoom>
@@ -59,7 +59,7 @@ const MyGallery = () => {
           <div className="six flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/6.png"
+                src="../../images/six.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -68,7 +68,7 @@ const MyGallery = () => {
           <div className="seven flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/7.png"
+                src="../../images/seven.png"
                 className="photo"
               ></StaticImage>
             </Zoom>
@@ -77,7 +77,7 @@ const MyGallery = () => {
           <div className="eight flex_center">
             <Zoom>
               <StaticImage
-                src="../../images/8.png"
+                src="../../images/eight.png"
                 className="photo"
               ></StaticImage>
             </Zoom>

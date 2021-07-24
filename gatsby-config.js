@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.john-kowalsky-photo.netlify.app",
+    siteUrl: "https://john-kowalsky-photo.netlify.app",
     title: "John Kowalsky Photo",
     description: "John Kowalsky's personal website.",
   },

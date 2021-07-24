@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Header.scss";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
-
-
-
   const [hide, setHide] = useState(false);
   const [on, setOn] = useState(false);
 
-  let website_width;
+  const ref = useRef(null);
 
   useEffect(() => {
+    let website_width;
     window.addEventListener("resize", () => {
       website_width = document.body.clientWidth;
     });
@@ -33,10 +31,8 @@ const Header = () => {
     });
   });
 
-
-
   const toggle = () => {
-    if (website_width <= 1000) {
+    if (ref.current.offsetWidth <= 1000) {
       if (on == false) {
         setOn(true);
       } else {
@@ -45,10 +41,8 @@ const Header = () => {
     }
   };
 
-
-
   return (
-    <header className={`header ${hide && "hide_header"}`}>
+    <header className={`header ${hide && "hide_header"}`} ref={ref}>
       <Link to="/" className="logo_link">
         {" "}
         <StaticImage src="../../images/logo.svg" alt="logo" />

@@ -16,6 +16,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/one.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -25,6 +26,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/two.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -34,6 +36,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/three.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -43,6 +46,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/four.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -52,6 +56,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/five.png"
                 className=" photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -61,6 +66,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/six.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -70,6 +76,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/seven.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -79,6 +86,7 @@ const MyGallery = () => {
               <StaticImage
                 src="../../images/eight.png"
                 className="photo"
+                alt="photo"
               ></StaticImage>
             </Zoom>
           </div>
@@ -87,7 +95,10 @@ const MyGallery = () => {
 
       <Link to="#contact" className="check_out_link flex_center">
         <p> feel free to contact me</p>{" "}
-        <StaticImage src="../../images/arrow_down.png"></StaticImage>
+        <StaticImage
+          src="../../images/arrow_down.png"
+          alt="arrow"
+        ></StaticImage>
       </Link>
     </section>
   );

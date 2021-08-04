@@ -34,7 +34,10 @@ const AboutMe = () => {
 
       <Link to="#my_services" className="check_out_link flex_center">
         <p> check out my services</p>{" "}
-        <StaticImage src="../../images/arrow_down.png"></StaticImage>
+        <StaticImage
+          src="../../images/arrow_down.png"
+          alt="arrow"
+        ></StaticImage>
       </Link>
     </section>
   );

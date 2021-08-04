@@ -68,17 +68,33 @@ const Header = () => {
       </nav>
 
       <div className="social_links flex_center">
-        <a href="https://www.behance.net" target="_blank">
+        <a
+          href="https://www.behance.net"
+          target="_blank"
+          rel="noreferrer  noopener"
+        >
           <StaticImage src="../../images/behance.svg" alt="Behance" />
         </a>
 
-        <a href="https://www.linkedin.com" target="_blank">
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noreferrer  noopener"
+        >
           <StaticImage src="../../images/linkedin.svg" alt="Linkedin" />
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noreferrer  noopener"
+        >
           <StaticImage src="../../images/instagram.svg" alt="Instagram" />
         </a>
-        <a href="https://www.pinterest.com" target="_blank">
+        <a
+          href="https://www.pinterest.com"
+          target="_blank"
+          rel="noreferrer  noopener"
+        >
           <StaticImage src="../../images/pinterest.svg" alt="Pinterest" />
         </a>
       </div>

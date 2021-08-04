@@ -10,8 +10,6 @@ const MyServices = () => {
         <h3>Some of the services I offer:</h3>
 
         <div className="services_grid flex_center">
-
-
           <Link to="../../portraits">
             <div className="service flex_center">
               <p className="service_title">portraits</p>
@@ -88,7 +86,10 @@ const MyServices = () => {
 
       <Link to="#my_gallery" className="check_out_link flex_center">
         <p> check out my gallery</p>{" "}
-        <StaticImage src="../../images/arrow_down.png"></StaticImage>
+        <StaticImage
+          src="../../images/arrow_down.png"
+          alt="arrow"
+        ></StaticImage>
       </Link>
     </section>
   );
